@@ -1,0 +1,19 @@
+[package]
+name = "rustpond"
+version = "0.9.0"
+authors = ["Joshua Franklin <joshlfrankl@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.7.2"
+rand_core = "0.5.1"
+rand_xoshiro = "0.4.0"
+chrono = "0.4.9"
+image = "0.22.3"
+rayon = "1.2.1"
+clap = "2.33.0"
+cairo-rs = "0.9.1"
+
+[profile.release]
+debug = false
+lto = false
